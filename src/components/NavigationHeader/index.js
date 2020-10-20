@@ -1,15 +1,14 @@
 import React from "react"
 import styles from "./style.module.css"
+import Logo from "../Logo/index.js"
 
 
 
 const NavigationHeader = () => (
-
-<main>
     <section className={styles.navigationHeader}>
+        <Logo/>
     </section>
 
-</main>
 
 )
 
