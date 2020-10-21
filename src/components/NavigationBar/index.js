@@ -3,20 +3,13 @@ import styles from "./style.module.css"
 
 const navTabs = ["Home","Accommodation","Photo gallery", "Contact"]
 
-const NavigationBar = () => (
+const NavigationBar = props => (
 
     <nav className={styles.navigationBar}>
-        {navTabs.map(tab => {
-            if (tab === "Home")
-            return( 
-            <li className={styles.active}>
-             {tab}
-            </li>)
-            else
-             return <li>{tab}</li>
-            }
-        )}
-    </nav>
+    {navTabs.map(tab => <li className={tab === props.activeTab ? styles.active : ''}>
+      {tab}</li>
+    )}
+  </nav>
 
 )
 
