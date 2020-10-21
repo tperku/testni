@@ -3,8 +3,6 @@ import styles from "./style.module.css"
 
 
 const Logo = () => (
-
-    <main>
         <section className ={styles.logo}>
             <span className ={styles.logoText}>
                 Villa Oliva Verde
@@ -13,8 +11,6 @@ const Logo = () => (
                 ISTRA-CROATIA
             </span>
         </section>
-
-    </main>
 )
 
 export default Logo
