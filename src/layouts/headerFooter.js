@@ -1,6 +1,6 @@
 import React from "react"
-import NavigationHeader from "../components/NavigationHeader/index.js"
-import Footer from "../components/Footer/index.js"
+import NavigationHeader from "../modules/NavigationHeader/index.js"
+import Footer from "../modules/Footer/index.js"
 
 const HeaderFooterLayout = ({ children }) => (
   <>
