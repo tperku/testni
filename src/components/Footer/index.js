@@ -1,9 +1,7 @@
 import React from "react"
-import styles from "../Footer/style.module.css"
+import styles from "./style.module.css"
+import NavigationBar from "../NavigationBar/index.js"
 
-
-const navTabs = ['Home', 'Accommodation', 'Photo Gallery', 'Contact']
- 
   const Footer = () => (
     <footer className={styles.footer}>
         <ul className={styles.address}>
@@ -17,11 +15,7 @@ const navTabs = ['Home', 'Accommodation', 'Photo Gallery', 'Contact']
             </li>
             <li>example@email.com</li>
         </ul>
-        <ul className={styles.navigation}>
-            {navTabs.map(tab =>
-              <li>{tab}</li>)
-            }
-        </ul>
+        <NavigationBar useThisStyle="footer"/>
     </footer>
   )
  

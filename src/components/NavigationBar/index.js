@@ -1,12 +1,12 @@
 import React from "react"
 import styles from "./style.module.css"
+import {navTabs} from "../../constants/constants.js"
 
-const navTabs = ["Home","Accommodation","Photo gallery", "Contact"]
 
-const NavigationBar = props => (
+const NavigationBar = ({ activeTab, useThisStyle }) => (
 
-    <nav className={styles.navigationBar}>
-    {navTabs.map(tab => <li className={tab === props.activeTab ? styles.active : ''}>
+    <nav className={styles[useThisStyle || "navigationBar"]}>
+    {navTabs.map(tab => <li className={tab === activeTab ? styles.active : ''}>
       {tab}</li>
     )}
   </nav>
@@ -14,3 +14,4 @@ const NavigationBar = props => (
 )
 
 export default NavigationBar
+

@@ -7,13 +7,13 @@ import styles from "./style.module.css"
 
 
 
-const NavigationHeader = (props) => (
+const NavigationHeader = ({ activeTab }) => (
     
     <>
     <ContactBar />
     <section className={styles.navigationHeader}>
         <Logo/>
-        <Navigation activeTab = {props.activeTab} />
+        <Navigation activeTab = {activeTab} />
     </section>
     </>
 
