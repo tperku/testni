@@ -1,8 +1,11 @@
 import React from "react"
 import HeaderFooter from "../layouts/headerFooter.js"
+import TitlePage from "../modules/TitlePage/index.js"
 
 const IndexPage = () => (
-  <HeaderFooter>{/* Body components here! */}</HeaderFooter>
+  <HeaderFooter>
+    <TitlePage />
+  </HeaderFooter>
 )
 
 export default IndexPage
