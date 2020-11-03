@@ -1,4 +1,6 @@
 import React, { useState } from "react"
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
+import { faChevronDown } from "@fortawesome/free-solid-svg-icons"
 import { languages } from "../../constants/constants.js"
 import ComboboxItem from "./comboboxItem/index.js"
 import styles from "./style.module.css"
@@ -21,6 +23,11 @@ const Combobox = () => {
           ))}
         </ul>
       }
+      <FontAwesomeIcon
+        icon={faChevronDown}
+        size="0.2x"
+        style={{ paddingRight: "12px" }}
+      />
       {selectedItem.language}
     </div>
   )
